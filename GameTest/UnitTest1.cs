@@ -4,13 +4,16 @@ using System.Globalization;
 
 namespace GameTest
 {
+    
     public class Tests
     {
+        Analyze input = new Analyze();
+
         [Test]
 
         public void NumbersComparisonHigh()
         {
-            bool compare = Comparison.CompareNumbers(6, 4);
+            bool compare = input.CompareNumbers(6, 4);
 
             Assert.IsFalse(compare);
         }
@@ -19,7 +22,7 @@ namespace GameTest
 
         public void NumbersComparisonLow()
         {
-            bool compare1 = Comparison.CompareNumbers(3, 4);
+            bool compare1 = input.CompareNumbers(3, 4);
 
             Assert.IsFalse(compare1);
         }
@@ -28,7 +31,7 @@ namespace GameTest
 
         public void NumbersComparisonEqual()
         {
-            bool compare2 = Comparison.CompareNumbers(4, 4);
+            bool compare2 = input.CompareNumbers(4, 4);
 
             Assert.IsTrue(compare2);
         }

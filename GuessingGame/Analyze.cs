@@ -7,10 +7,10 @@ namespace GuessingGame
 {
     public  class Analyze
     {
-        int number;
-
-        public   int GetInput()
+        
+        public  int GetInput()
         {
+            int number;
             
             do
             {
